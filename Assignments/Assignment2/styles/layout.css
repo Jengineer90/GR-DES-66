@@ -7,3 +7,18 @@ header {
 main {
     background-color: pink
 }
+
+header .img-container1{
+    margin: 0px auto;
+    background-color: white;
+}
+
+header .img-container2{
+    margin: 0px auto;
+    background-color: white;
+}
+
+header .img-container3{
+    margin: 0px auto;
+    background-color: white;
+}
