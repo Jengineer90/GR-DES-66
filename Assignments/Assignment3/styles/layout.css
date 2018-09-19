@@ -1,6 +1,4 @@
-@media (min-width: 768px)
-
-header {
+header{
     background-color: rgb(194, 226, 128);
     text-align: center;
 }
@@ -8,6 +6,7 @@ header {
 main {
     background-color: pink;
     width: 960px;
+    height: 800px;
     margin: 0px auto;
 }
 
@@ -31,6 +30,10 @@ main {
     width: 100%;
 }
 
+.fullcard-container-2{
+    margin-bottom: 15px;
+}
+
 .fullcard2 {
     display: inline-block;
     width: 33%;
@@ -51,14 +54,19 @@ main {
 }
 
 .fullcard2 img {
-    width: 100%;
+    width: 80%;
+}
+
+
+.fullcard3 {
+    float: left;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.headline {
+    margin-top: -300px;
 }
 .clearfix {
     clear: both;
 }
-
-.fullcard3 {
-    display: inline;
-    width: 33.3%;
-}
-
