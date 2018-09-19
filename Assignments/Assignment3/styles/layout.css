@@ -1,3 +1,8 @@
+@media (min-width: 760px) {
+body {
+        background-color: lightsteelblue;
+    }
+
 header{
     background-color: rgb(194, 226, 128);
     text-align: center;
