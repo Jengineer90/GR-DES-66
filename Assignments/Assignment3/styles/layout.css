@@ -1,24 +1,64 @@
+@media (min-width: 768px)
+
 header {
     background-color: rgb(194, 226, 128);
     text-align: center;
-
 }
 
 main {
-    background-color: pink
+    background-color: pink;
+    width: 960px;
+    margin: 0px auto;
 }
 
-header .img-container1{
-    margin: 0px auto;
-    background-color: white;
+.fullcard-container-1{
+    margin-bottom: 15px;
+}
+.fullcard1 {
+    display: inline-block;
+    width: 45%;
 }
 
-header .img-container2{
-    margin: 0px auto;
-    background-color: white;
+.fullcard1:first-child {
+    float: left;
 }
 
-header .img-container3{
-    margin: 0px auto;
-    background-color: white;
+.fullcard1:nth-child(2){
+    float: right;
 }
+
+.fullcard1 img {
+    width: 100%;
+}
+
+.fullcard2 {
+    display: inline-block;
+    width: 33%;
+}
+
+.fullcard2:first-child {
+    float: left;
+}
+
+.fullcard2:nth-child(2){
+    float: left;
+}
+
+.fullcard2:nth-child(3){
+    float: left;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.fullcard2 img {
+    width: 100%;
+}
+.clearfix {
+    clear: both;
+}
+
+.fullcard3 {
+    display: inline;
+    width: 33.3%;
+}
+
