@@ -1,0 +1,56 @@
+/* Header styles */
+
+h1, h2, h3 {
+    color: darkblue;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;   
+    margin-top: 20px;
+    margin-bottom: 0px; 
+}
+
+h2{
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 15px;
+    color: black;
+}
+
+/* Paragraph styles */
+p{
+    color:black;
+    font-style: normal;
+    font-size: 20px;
+    column-count: 2;
+}
+
+p::first-letter{
+    font-size: 40px;
+}
+
+@media (min-width: 769px){
+    h1{
+        font-size: 35px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+       text-align: left;
+    }
+   
+    p{
+        font-size: 15px;
+        column-count: 4;
+        color: purple;
+    }
+
+}
