@@ -1,0 +1,44 @@
+
+/* Header Style */
+header {
+    background-color: rgb(194, 226, 128);
+    text-align: center;
+
+}
+
+main {
+    background-color: pink
+}
+
+/* Paragraph styles */
+p{
+    color:black;
+    font-style: normal;
+    font-size: 20px;
+    column-count: 2;
+}
+
+p::first-letter{
+    font-size: 40px;
+}
+
+@media (min-width: 769px){
+    h1{
+        font-size: 35px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+       text-align: left;
+    }
+   
+    p{
+        font-size: 15px;
+        column-count: 4;
+        color: purple;
+    }
+
+}
