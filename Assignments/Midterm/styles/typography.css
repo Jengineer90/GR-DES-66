@@ -1,3 +1,81 @@
+/* Fonts */
+body { 
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    position: fixed;
+    overflow: hidden;
+    background-color:white;
+    opacity: 10%;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    
+  }
+
+.header a {
+    float: none;
+    display: block;
+
+  }
+  
+.header a.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+  }
+  
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+.header-right {
+    float: none;
+  }
+  
+  @media screen and (min-width: 760px) {
+    .header {
+        padding-top: 12px;
+      }
+    
+    .header a.logo {
+        font-size: 35px;
+        text-align: left;
+        padding-top: 10px;
+      }
+
+    .header a {
+        float: left;
+        text-align: center;
+        padding-top: 12px;
+        margin-left: 10px; 
+        margin-right: 10px;
+      }
+   
+    .header-right {
+      float: right;
+    }
+  }
+
+
+
 /* Header styles */
 h1{
     color:rgb(138, 22, 216);
