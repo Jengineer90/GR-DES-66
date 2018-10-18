@@ -3,12 +3,12 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
+/* Header */
 .header {
     position: fixed;
     overflow: hidden;
     background-color:white;
-    opacity: 10%;
+    opacity: 0%;
   }
   
   .header a {
@@ -34,6 +34,7 @@ body {
     font-weight: bold;
     text-align: center;
     padding: 12px;
+    text-shadow: 2px 2px dodgerblue;
   }
   
 .header a:hover {
@@ -42,7 +43,7 @@ body {
   }
   
 .header a.active {
-    background-color: dodgerblue;
+    background-color: darkblue;
     color: white;
   }
   
@@ -73,42 +74,3 @@ body {
       float: right;
     }
   }
-
-
-
-/* Header styles */
-h1{
-    color:rgb(138, 22, 216);
-    text-align: center;
-       
-}
-
-/* Paragraph styles */
-p{
-    color:black;
-    font-style: italic;
-    font-size: 20px;
-    column-count: 2;
-
-}
-
-/* List styles */
-ul{
-    list-style-type: none;
-    padding-left: 0px;
-}
-
-li{
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding-left: 8px;
-
-}
-
-/*anchor and links*/
-a{
-    font-size: 30px;
-    color:blue;
-
-}
