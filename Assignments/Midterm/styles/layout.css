@@ -1,25 +1,11 @@
 .responsive {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     padding-top: 12px;
     padding-left: 0px;
     padding-right: 0px;
     opacity: 0.3;
     position: relative;
-    left: 0px;
-}
-.header {
-    position: absolute;
-    left:0px;
-    top:0px;
-  }
-
-.PhotoA {
-    position: absolute;
-    width: 10%;
-    height: 05%;
-    left: 55px;
-    top: 240px;
 }
 .Photo1 {
     position: absolute;
@@ -47,6 +33,15 @@
     top: 1320px;
 }
 
+.fullcard-container-1{
+    position: relative;
+    margin-bottom: 15px;
+}
+.fullcard1 {
+    display: inline-block;
+    width: 45%;
+}
+
 @media screen and (min-width: 760px) {
     .responsive {
         width: 100%;
@@ -55,16 +50,5 @@
         padding-left: 0px;
         padding-right: 0px;
         opacity: 0.3;
-        position: relative;
-        left: 0px;
-    }
-
-    .Photo1 {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 300px;
-        top: 300px;
-
     }
 }
