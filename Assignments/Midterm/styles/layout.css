@@ -1,15 +1,25 @@
-.background {
-    width: 1000%;
-    height: 1000px;
+.responsive {
+    width: 100%;
+    height: 100%;
+    padding-top: 12px;
     padding-left: 0px;
     padding-right: 0px;
-    background-color:White;
-    opacity: 0.1;
-    position: fixed;
-    left: -1300px; 
+    opacity: 0.3;
+    position: relative;
+    left: 0px;
 }
-.background {
-    position: fixed;
+.header {
+    position: absolute;
+    left:0px;
+    top:0px;
+  }
+
+.PhotoA {
+    position: absolute;
+    width: 10%;
+    height: 05%;
+    left: 55px;
+    top: 240px;
 }
 .Photo1 {
     position: absolute;

@@ -7,6 +7,8 @@ body {
 .header {
     overflow: hidden;
     background-color:white;
+    width: auto;
+    height: auto;
   }
   
   .header a {
@@ -68,6 +70,7 @@ body {
       }
    
     .header-right {
-      float: right;
-    }
+       float: right;
+
+      }
   }
