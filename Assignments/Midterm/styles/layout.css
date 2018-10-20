@@ -1,54 +1,214 @@
 .responsive {
-    width: 50%;
-    height: 50%;
-    padding-top: 12px;
+    width: 0%;
+    height: 0%;
+    padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    opacity: 0.3;
     position: relative;
+    background-attachment: fixed;
+}
+.fullcard1 {
+    width: 100%;
+    height: 225%;
+    position: absolute;
+    background-color: lightsteelblue;
+    top: 220px;
 }
 .Photo1 {
     position: absolute;
     left: 55px;
-    top: 240px;
+    top: 40px;
 }
 .Photo2 {
     position: absolute;
     left: 55px;
-    top: 510px;
+    top: 330px;
 }
 .Photo3 {
     position: absolute;
     left: 55px;
-    top: 780px;
+    top: 620px;
 }
 .Photo4 {
     position: absolute;
     left: 55px;
-    top: 1050px;
+    top: 910px;
 }
 .Photo5 {
     position: absolute;
     left: 55px;
-    top: 1320px;
+    top: 1200px;
 }
-
-.fullcard-container-1{
+.Photo6 {
+    position: absolute;
+    left: 55px;
+    top: 1490px;
+    padding-bottom: 10px;
+}
+.fullcard2 {
+    height: 230%;
+    position: absolute;
+    background-color: lightsteelblue;
+    top: 220px;
+    bottom: 10px;
+}
+.responsive2 {
+    width: 300px;
+    height: 240px;
+    left: 30px;
+    top: 40px;
+    position: absolute;
+}
+.about-text{
     position: relative;
-    margin-bottom: 15px;
+    top: 295px;
+    columns: 1;
+    width: 268px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+    letter-spacing: 1px;
 }
-.fullcard1 {
-    display: inline-block;
-    width: 45%;
+.fullcard3 {
+    height: 250%;
+    position: absolute;
+    background-color:lightsteelblue;
+    top: 220px;
+    bottom: 10px;
+}
+.responsive3 {
+    width: 300px;
+    height: 220px;
+    left: 30px;
+    top: 40px;
+    position: absolute;
+}
+.responsive4 {
+    width: 300px;
+    height: 220px;
+    left: 30px;
+    top: 300px;
+    position: absolute;
+}
+.responsive5 {
+    width: 300px;
+    height: 220px;
+    left: 30px;
+    top: 560px;
+    position: absolute;
+}
+.about-text2{
+    position: relative;
+    top: 795px;
+    columns: 1;
+    width: 268px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+    letter-spacing: 1px;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 460px) {
+    .fullcard1{
+        position: relative;
+        background-color: none;
+        top:-1000px;
+    }
     .responsive {
         width: 100%;
         height: 100%;
         padding-top: 12px;
+        opacity: 0.2;
+    }
+    .Photo1 {
+        position: absolute;
+        left: 270px;
+        top: 190px;
+    }
+    .Photo2 {
+        position: absolute;
+        left: 270px;
+        top: 510px;
+    }
+    .Photo3 {
+        position: absolute;
+        left: 590px;
+        top: 190px;
+    }
+    .Photo4 {
+        position: absolute;
+        left: 590px;
+        top: 510px;
+    }
+    .Photo5 {
+        position: absolute;
+        left: 910px;
+        top: 190px;
+    }
+    .Photo6 {
+        position: absolute;
+        left: 910px;
+        top: 510px;
+    }
+    .fullcard2 {
+        width: 100;
+        height: auto;
+        position: absolute;
+        background-color: none;
+    }
+    .responsive2 {
+        width: 550px;
+        height: 440px;
+        left: 435px;
+        top: -60px;
+        position: absolute;
+    }
+    .about-text{
+        position: absolute;
+        left: 170px;
+        top: 450px;
+        columns: 3;
+        width: 1100px;
+        column-gap: 30px;
         padding-left: 0px;
         padding-right: 0px;
-        opacity: 0.3;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+    .fullcard3 {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        background-color: none;
+    }
+    .responsive3 {
+        width: 400px;
+        height: 320px;
+        left: 62px;
+        top: -20px;
+        position: absolute;
+    }
+    .responsive4 {
+        width: 400px;
+        height: 320px;
+        left: 522px;
+        top: -20px;
+        position: absolute;
+    }
+    .responsive5 {
+        width: 400px;
+        height: 320px;
+        left: 982px;
+        top: -20px;
+        position: absolute;
+    }
+    .about-text2{
+        position: relative;
+        top: 380px;
+        width: 1070px;
+        padding-left: 195px;
+        padding-right: 45px;
+        text-align: left;
+        letter-spacing: 1px;
     }
 }
