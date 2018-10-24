@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+</head>
+<body>
+
+    <div class="button-container">
+        <button onclick="changeMyText()">Change Text</button>
+        <button onclick="changeMyColor()">Change Color</button>
+    </div>
+
+
+    <h1 id="docHeader">Goodbye, Blue!</h1>
+    <script>
+    var docHeader = document.getElementById("docHeader");
+
+       var changeMyText = function(){
+            // This is my Header text
+            var myText = "Hello, World!";
+            docHeader.innerHTML = myText;
+         }
+
+       var changeMyColor = function(){
+           //This is my Header color
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255; 
+
+            var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+            docHeader.style.color = RGBval;
+         }
+    </script>
+
+</body>
+</html>
