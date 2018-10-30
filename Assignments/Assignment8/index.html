@@ -13,10 +13,10 @@
     <img id="image1" src="images/img_0118.jpg" alt="background1" class="responsive">
 
     <div class="button-container">
-        <button onclick="changeMyText()">Change Text</button>
-        <button onclick="changeMyColor()">Change Color</button>
-        <button onclick="changeMyBackground()">Change Background</button>
-        <button onclick="changeMyColor()">Change Color</button>
+        <button onclick="changeMyText()">Change Header Text</button>
+        <button onclick="changeMyColor()">Change Header Color</button>
+        <button onclick="changeMyBackground()">Change Image</button>
+        <button onclick="changeMyBackgroundColor()">Change Background Color</button>
     </div>
 
 
@@ -40,13 +40,25 @@
             docHeader.style.color = RGBval;
          }
 
-    var Background = Image.getElementById("MyBackground")
-    function changeMyBackground() {
+       var Background = Image.getElementById("MyBackground")
+            function changeMyBackground() {
             // This is my Background Image
             document.getElementById("image1").src = "images/img_0136.jpg";
          }
+        
+         function changeMyBackgroundColor() {
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255; 
+
+            var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+            document.body.style.backgroundColor = RGBval;
+         }
 
     </script>
+    <div class="backgroundcolor">
+        
+    </div>
 
 
 </body>
