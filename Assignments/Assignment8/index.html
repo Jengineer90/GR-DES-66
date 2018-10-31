@@ -20,17 +20,17 @@
     </div>
 
 
-    <h1 id="docHeader">Good Evening Class!</h1>
+    <h1 id="docHeader">Good Evening Class! </h1>
     <script>
     var docHeader = document.getElementById("docHeader");
 
-       var changeMyText = function(){
+       function changeMyText() {
             // This is my Header text
             var myText = "Good Evening Professor!";
             docHeader.innerHTML = myText;
          }
 
-       var changeMyColor = function(){
+       function changeMyColor() {
            //This is my Header color
             var red = Math.random()*255;
             var green = Math.random()*255;
@@ -40,13 +40,12 @@
             docHeader.style.color = RGBval;
          }
 
-       var Background = Image.getElementById("MyBackground")
-            function changeMyBackground() {
+       function changeMyBackground() {
             // This is my Background Image
             document.getElementById("image1").src = "images/img_0136.jpg";
          }
-        
-         function changeMyBackgroundColor() {
+
+       function changeMyBackgroundColor() {
             var red = Math.random()*255;
             var green = Math.random()*255;
             var blue = Math.random()*255; 
