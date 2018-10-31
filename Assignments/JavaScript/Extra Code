@@ -19,3 +19,38 @@
      docHeader.style.fontSize = myTextSize + "px";
      //"rgb(200, 0, 255)"
      docHeader.style.color = RGBval;
+
+         <script>
+    var docHeader = document.getElementById("docHeader");
+
+       function changeMyText() {
+            // This is my Header text
+            var myText = "Good Evening Professor!";
+            docHeader.innerHTML = myText;
+         }
+
+       function changeMyColor() {
+           //This is my Header color
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255; 
+
+            var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+            docHeader.style.color = RGBval;
+         }
+
+       function changeMyBackground() {
+            // This is my Background Image
+            document.getElementById("image1").src = "images/img_0136.jpg";
+         }
+
+       function changeMyBackgroundColor() {
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255; 
+
+            var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+            document.body.style.backgroundColor = RGBval;
+         }
+
+    </script>
