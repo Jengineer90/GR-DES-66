@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+    <div class="button-container">
+        <button id="ImgToggle"></button>
+    </div>
+
+    <h1> This is a Quokka!</h1>
+
+    <img
+    src="https://gifts.worldwildlife.org/gift-center/Images/large-species-photo/large-Quokka-photo.jpg"
+    alt="Quokka" class="page-img">
+
+    <script>
+        $(document).ready(function(){
+            /* The four lines below can be writen out in jQuery as "$('.page-img').get()[0].hide();" which is shown below */
+
+            // var imgQuokka = document.getElementsByClassName('page-img')[0];
+            // imgQuokka.style.display = "none";
+
+            // var buttonToggle = document.getElementById("imgToggle");
+            // buttonToggle.innerText = "Show the Image";
+
+            /* jQuery Coding */
+            $('.page-img').get()[0].hide();
+            $('#imgToggle').text("Show the Image");
+
+            console.log($('#imgToggle').text("Show the Image"))           
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
