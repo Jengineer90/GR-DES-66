@@ -35,7 +35,7 @@
             if(header.style.visibility === "visible"){
                 document.getElementById("showButton").setAttribute("disabled", "disabled");
                 console.log(document.getElementById("message"));
-                document.getElementById("message").innerText = "The header is already shown!";
+                document.getElementById("message").innerText = "The header is still on the screen!";
             }
             header.style.visibility = "visible";
         }
@@ -48,7 +48,7 @@
             if(header.style.visibility === "hidden"){
                 document.getElementById("hideButton").setAttribute("disabled", "disabled");
                 console.log(document.getElementById("message"));
-                document.getElementById("message").innerText = "The header is already hidden!";
+                document.getElementById("message").innerText = "The header is hidden!";
             }
             header.style.visibility = "hidden";
     }
