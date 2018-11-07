@@ -27,8 +27,7 @@ h1 {
     position: fixed;
     top: 50px;
     left: 420px;
-    opacity: 1.5;
-    background-image: "IMG_0118 copy.jpg";
+    display: inline;
 }   
 
 .responsive2 {
@@ -37,6 +36,5 @@ h1 {
     position: fixed;
     top: 200px;
     left: 900px;
-    opacity: 1.5;
-    background-image: "IMG_0118 copy.jpg";
+    display: none;
 }  
