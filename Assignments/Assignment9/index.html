@@ -15,8 +15,8 @@
         <button onclick="showHeader()" id="showButton"> Show</button>
         <button onclick="hideHeader()" id="hideButton"> Hide</button>
         <button onclick="changeMyBackgroundColor()">Change Background Color</button>
-        <button onclick="myFunction()"> Images 1</button>
-        <button onclick="myFunction2()"> Images 2</button>
+        <button onclick="Image1()"> Images 1</button>
+        <button onclick="Image2()"> Images 2</button>
     </div>
 
     <div class="guestmessage">
@@ -60,16 +60,16 @@
             document.body.style.backgroundColor = RGBval;
          }
 
-        function myFunction() {
-            var image1 = document.getElementById("myDIV1");
+        function Image1() {
+            var image1 = document.getElementById("myImageToggle1");
             if (image1.style.display === "inline") {
             image1.style.display = "none";
     }       
             else {
             image1.style.display = "inline";
     }
-}        function myFunction2() {
-            var image2 = document.getElementById("myDIV2");
+}        function Image2() {
+            var image2 = document.getElementById("myImageToggle2");
             if (image2.style.display === "inline") {
             image2.style.display = "none";
     }       
@@ -80,8 +80,8 @@
 
 
     </script>
-    <img id="myDIV1" src="images/img_0118.jpg" alt="image1" class="responsive1">
-    <img id="myDIV2" src="images/img_0136.jpg" alt="image2" class="responsive2">
+    <img id="myImageToggle1" src="images/img_0118.jpg" alt="image1" class="responsive1">
+    <img id="myImageToggle2" src="images/img_0136.jpg" alt="image2" class="responsive2">
 
 </body>
 </html>
