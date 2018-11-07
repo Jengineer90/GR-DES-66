@@ -15,8 +15,8 @@
         <button onclick="showHeader()" id="showButton"> Show</button>
         <button onclick="hideHeader()" id="hideButton"> Hide</button>
         <button onclick="changeMyBackgroundColor()">Change Background Color</button>
-        <button onclick="Image1()"> Images 1</button>
-        <button onclick="Image2()"> Images 2</button>
+        <button onclick="Image1();" id="img1Button">Hide Image 1</button>
+        <!-- <button onclick="Image2()">Images 2</button> -->
     </div>
 
     <div class="guestmessage">
@@ -26,59 +26,75 @@
     <script>
     var header = document.getElementById("docHeader");
 
-        function showHeader (){
-            console.log(header.style.visibility);
-            document.getElementById("message").innerText = "";
-            document.getElementById("showButton").removeAttribute("disabled");
+    function showHeader (){
+        console.log(header.style.visibility);
+        document.getElementById("message").innerText = "";
+        document.getElementById("showButton").removeAttribute("disabled");
 
-            if(header.style.visibility === "visible"){
-                document.getElementById("showButton").setAttribute("disabled", "disabled");
-                console.log(document.getElementById("message"));
-                document.getElementById("message").innerText = "The header is still on the screen!";
-            }
-            header.style.visibility = "visible";
+        if(header.style.visibility === "visible"){
+            document.getElementById("showButton").setAttribute("disabled", "disabled");
+            console.log(document.getElementById("message"));
+            document.getElementById("message").innerText = "The header is still on the screen!";
+        }
+        header.style.visibility = "visible";
     }
 
-        function hideHeader (){
-            console.log(header.style.visibility);
-            document.getElementById("message").innerText = "";
-            document.getElementById("hideButton").removeAttribute("disabled");
+    function hideHeader (){
+        console.log(header.style.visibility);
+        document.getElementById("message").innerText = "";
+        document.getElementById("hideButton").removeAttribute("disabled");
 
-            if(header.style.visibility === "hidden"){
-                document.getElementById("hideButton").setAttribute("disabled", "disabled");
-                console.log(document.getElementById("message"));
-                document.getElementById("message").innerText = "The header is hidden!";
-            }
-            header.style.visibility = "hidden";
+        if(header.style.visibility === "hidden"){
+            document.getElementById("hideButton").setAttribute("disabled", "disabled");
+            console.log(document.getElementById("message"));
+            document.getElementById("message").innerText = "The header is hidden!";
+        }
+        header.style.visibility = "hidden";
     }
-        function changeMyBackgroundColor() {
-            var red = Math.random()*255;
-            var green = Math.random()*255;
-            var blue = Math.random()*255; 
+    
+    function changeMyBackgroundColor() {
+        var red = Math.random()*255;
+        var green = Math.random()*255;
+        var blue = Math.random()*255; 
 
-            var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
-            document.body.style.backgroundColor = RGBval;
-         }
+        var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+        document.body.style.backgroundColor = RGBval;
+    }
 
-        function Image1() {
-            console.log(document.getElementById("myImageToggle1"));
-            var image1 = document.getElementById("myImageToggle1");
-            if (image1.style.display === "inline") {
+    var img1_showing = true;
+    function Image1() {
+        console.log(document.getElementById("myImageToggle1"));
+            
+        var  image1 = document.getElementById("myImageToggle1"),
+             image2 = document.getElementById("myImageToggle2"),
+            button1 = document.getElementById("img1Button");
+        
+        if (img1_showing) {
             image1.style.display = "none";
-    }       
-            else {
-            image1.style.display = "inline";
-    }
-}        function Image2() {
-            console.log(document.getElementById("myImageToggle2"));
-            var image2 = document.getElementById("myImageToggle2");
-            if (image2.style.display === "inline") {
+            image2.style.display = "inline-block";
+            button1.innerText = "Show Image 1";
+            img1_showing = false;
+        }       
+        else {
+            image1.style.display = "inline-block";
             image2.style.display = "none";
-    }       
-            else {
-            image2.style.display = "inline";
-    }
-}
+            button1.innerText = "Hide Image 1";
+            img1_showing = true;
+        }
+    }        
+    
+    // function Image2() {
+    //     console.log(document.getElementById("myImageToggle2"));
+        
+    //     var image2 = document.getElementById("myImageToggle2");
+        
+    //     if (image2.style.display === "inline") {
+    //         image2.style.display = "none";
+    //     }       
+    //     else {
+    //         image2.style.display = "inline";
+    //     }
+    // }
 
 
     </script>
