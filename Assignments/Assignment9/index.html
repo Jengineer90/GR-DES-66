@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+
+    <img id="image1" src="images/img_0118.jpg" alt="image1" class="responsive1">
+
+    <h1 id="docHeader">Good evening everyone!</h1>
+
+    <div class="button-container">
+        <button onclick="showHeader()" id="showButton"> Show!</button>
+        <button onclick="hideHeader()" id="hideButton"> Hide!</button>
+        <button onclick="changeMyBackgroundColor()">Change Background Color</button>
+    </div>
+
+    <div class="guestmessage">
+    <p id="message"></p>
+    </div>
+
+    <script>
+    var header = document.getElementById("docHeader");
+
+
+        function showHeader (){
+            console.log(header.style.visibility);
+            document.getElementById("message").innerText = "";
+            document.getElementById("showButton").removeAttribute("disabled");
+
+            if(header.style.visibility === "visible"){
+                document.getElementById("showButton").setAttribute("disabled", "disabled");
+                console.log(document.getElementById("message"));
+                document.getElementById("message").innerText = "The header is already shown!";
+            }
+            header.style.visibility = "visible";
+        }
+
+        function hideHeader (){
+            console.log(header.style.visibility);
+            document.getElementById("message").innerText = "";
+            document.getElementById("hideButton").removeAttribute("disabled");
+
+            if(header.style.visibility === "hidden"){
+                document.getElementById("hideButton").setAttribute("disabled", "disabled");
+                console.log(document.getElementById("message"));
+                document.getElementById("message").innerText = "The header is already hidden!";
+            }
+            header.style.visibility = "hidden";
+    }
+        function changeMyBackgroundColor() {
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255; 
+
+            var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+            document.body.style.backgroundColor = RGBval;
+         }
+
+    </script>
+
+    <img id="image2" src="images/img_0136.jpg" alt="image2" class="responsive2">
+
+</body>
+</html>

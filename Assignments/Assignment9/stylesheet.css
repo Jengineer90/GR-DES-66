@@ -1,0 +1,44 @@
+.button-container {
+    width: 255px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    left: 0px;
+    background-color:blue;
+}
+
+h1 {
+    position: fixed;
+    top: 500px;
+    left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+}
+
+.guestmessage {
+    position: relative;
+    top: 450px;
+    left: 220px;
+    font-size: 50px;
+    color: red;
+}
+
+.responsive1 {
+    width: 30%;
+    height: 45%;
+    position: fixed;
+    top: 50px;
+    left: 520px;
+    opacity: 1.5;
+    background-image: "IMG_0118 copy.jpg";
+}   
+
+.responsive2 {
+    width: 35%;
+    height: 45%;
+    position: absolute;
+    top: 200px;
+    left: 900px;
+    opacity: 1.5;
+    background-image: "IMG_0118 copy.jpg";
+}  
