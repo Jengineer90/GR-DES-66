@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+    
+    <h1 id="docHeader">Good evening everyone!</h1>
+
+    <div class="button-container">
+        <button onclick="showHeader()" id="showButton"> Show</button>
+        <button onclick="hideHeader()" id="hideButton"> Hide</button>
+        <button onclick="changeMyBackgroundColor()">Change Background Color</button>
+        <button onclick="myFunction()"> Images!</button>
+    </div>
+
+    <div class="guestmessage">
+    <p id="message"></p>
+    </div>
+
+    <script>
+    var header = document.getElementById("docHeader");
+
+        function showHeader (){
+            console.log(header.style.visibility);
+            document.getElementById("message").innerText = "";
+            document.getElementById("showButton").removeAttribute("disabled");
+
+            if(header.style.visibility === "visible"){
+                document.getElementById("showButton").setAttribute("disabled", "disabled");
+                console.log(document.getElementById("message"));
+                document.getElementById("message").innerText = "The header is still on the screen!";
+            }
+            header.style.visibility = "visible";
+    }
+
+        function hideHeader (){
+            console.log(header.style.visibility);
+            document.getElementById("message").innerText = "";
+            document.getElementById("hideButton").removeAttribute("disabled");
+
+            if(header.style.visibility === "hidden"){
+                document.getElementById("hideButton").setAttribute("disabled", "disabled");
+                console.log(document.getElementById("message"));
+                document.getElementById("message").innerText = "The header is hidden!";
+            }
+            header.style.visibility = "hidden";
+    }
+        function changeMyBackgroundColor() {
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255; 
+
+            var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+            document.body.style.backgroundColor = RGBval;
+         }
+
+        function myFunction() {
+            var x = document.getElementById("myDIV1");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+
+    }       
+            else {
+            x.style.display = "none";
+    }
+}
+        function myFunction() {
+            var x = document.getElementById("myDIV2");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+
+    }       
+            else {
+            x.style.display = "none";
+    }
+}
+
+
+    </script>
+    <img id="myDIV1" src="images/img_0118.jpg" alt="image1" class="responsive1">
+    <img id="myDIV2" src="images/img_0136.jpg" alt="image2" class="responsive2">
+
+</body>
+</html>
