@@ -6,7 +6,7 @@
 
 h1 {
     position: fixed;
-    top: 500px;
+    top: 600px;
     left: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 100px;
@@ -14,7 +14,7 @@ h1 {
 }
 
 .guestmessage {
-    position: relative;
+    position: fixed;
     top: 450px;
     left: 220px;
     font-size: 50px;
@@ -26,7 +26,7 @@ h1 {
     height: 45%;
     position: fixed;
     top: 50px;
-    left: 520px;
+    left: 420px;
     opacity: 1.5;
     background-image: "IMG_0118 copy.jpg";
 }   
@@ -34,7 +34,7 @@ h1 {
 .responsive2 {
     width: 35%;
     height: 45%;
-    position: absolute;
+    position: fixed;
     top: 200px;
     left: 900px;
     opacity: 1.5;
