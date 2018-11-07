@@ -36,5 +36,5 @@ h1 {
     position: fixed;
     top: 200px;
     left: 900px;
-    display: none;
+    display: inline;
 }  
