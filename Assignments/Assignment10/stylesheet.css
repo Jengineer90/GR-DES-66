@@ -1,0 +1,40 @@
+.button-container {
+    position: fixed;
+    top: 20px;
+    left: 0px;
+}
+
+h1 {
+    position: fixed;
+    top: 600px;
+    left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    color: blue;
+}
+
+.guestmessage {
+    position: fixed;
+    top: 450px;
+    left: 220px;
+    font-size: 50px;
+    color: red;
+}
+
+.responsive1 {
+    width: 30%;
+    height: 45%;
+    position: fixed;
+    top: 50px;
+    left: 420px;
+    display: inline;
+}   
+
+.responsive2 {
+    width: 35%;
+    height: 45%;
+    position: fixed;
+    top: 200px;
+    left: 900px;
+    display: inline;
+}  
