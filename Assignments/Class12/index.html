@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+    <!-- BUTTONS -->
     <div class="button-container">
         <button id="append">Append</button>
         <button id="prepend">Prepend</button>
@@ -31,6 +31,8 @@
     </div>
 
     <Script>
+
+        //ACTIONS
         var appendAnElement = function(){
             $('.box1').append('<h3>Hello, World!</h3>');
         }
@@ -58,6 +60,7 @@
             $('h3').remove();
         }
 
+        //EVENTS
         $('#append').click(function() {
             appendAnElement();
         });
@@ -80,6 +83,15 @@
 
         $('#before').click(function() {
             beforeAnElement();
+        });
+
+        // $('button').click(function(evnt) {
+
+        //     var thisID = $(evnt.target).attr('id');
+        //     console.log(thisID+"AnElement");
+
+        //     var functionName = thisID+"AnElement";
+        //thisID + AnElement();
         });
 
         $('#remove').click(function() {
