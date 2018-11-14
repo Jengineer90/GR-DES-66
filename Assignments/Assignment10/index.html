@@ -53,13 +53,17 @@
             }   
 
             $('#headerToggle').click(function() {
-                $( "h1 , h2" ).slideToggle();
-                if($('#headerToggle').css('display') == 'none'){
-                    $('#headerToggle').text("Show Header");
-                }
-                else {
-                    $('#headerToggle').text("Hide Header");
-                }
+                $( "h1 , h2" ).slideToggle(function(){
+                    
+                    console.log($('#headerToggle').css('display'));
+
+                    if($('h1').css('display') == 'none'){
+                        $('#headerToggle').text("Show Header");
+                    }
+                    else {
+                        $('#headerToggle').text("Hide Header");
+                    }
+                });
             });
 
             $( "li.fade" ).hover(function() {
