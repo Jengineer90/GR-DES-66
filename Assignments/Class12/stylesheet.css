@@ -1,0 +1,17 @@
+.box {
+    min-width: 400px;
+    min-height: 200px;
+}
+
+.box1 {
+    background-color: pink;
+}
+
+.box2 {
+    background-color: brown;
+
+}
+
+.bordered {
+    border: 10px solid blanchedalmond;
+}
