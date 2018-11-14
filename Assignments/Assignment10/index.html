@@ -12,14 +12,16 @@
 
     <div class="background"></div>
     <div class="button-container">
-        <button id="headerToggle">Header</button>
+        <button id="headerToggle">Show Header</button>
         <!-- <button id="changeMyBackgroundColor">Change Background Color</button> -->
         <button id="imgToggle">Image Toggle</button>
     </div>
 
+    <div class="header-container">
     <h1 style="display: none">
         “The moment you doubt whether you can fly, you cease for ever to be able to do it.”</h1>
     <h2 style="display:none">― J. M. Barrie, Peter Pan </h2>
+    </div>
 
     <div class="img-container">
         <img src="http://shenkmanarts.ca/cs/groups/content/@webshenkman/documents/webcontent/mdaw/nte5/~edisp/cap523454.jpg" alt="succulent1" class="page-img">
@@ -48,10 +50,16 @@
             var imageToggle = function(){
                 // see https://api.jquery.com/toggle-event/
                 $('.page-img').toggle();
-            }           
-            
-            $( '#headerToggle' ).click(function() {
+            }   
+
+            $('#headerToggle').click(function() {
                 $( "h1 , h2" ).slideToggle();
+                if($('#headerToggle').css('display') == 'none'){
+                    $('#headerToggle').text("Show Header");
+                }
+                else {
+                    $('#headerToggle').text("Hide Header");
+                }
             });
 
             $( "li.fade" ).hover(function() {
