@@ -45,14 +45,14 @@
             $('#imgToggle').click(function(){
                 imageToggle();
             });
-            $( '#headerToggle' ).click(function() {
-                $( "h1 , h2" ).slideToggle();
-            });
-
             var imageToggle = function(){
                 // see https://api.jquery.com/toggle-event/
                 $('.page-img').toggle();
-            }
+            }           
+            
+            $( '#headerToggle' ).click(function() {
+                $( "h1 , h2" ).slideToggle();
+            });
 
             $( "li.fade" ).hover(function() {
                 $( this ).fadeOut( 100 );
