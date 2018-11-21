@@ -5,11 +5,11 @@
     background-color:rgb(250, 224, 175);
 }
 .gallery {
-    margin: 20px 20px;
+    margin: 10px 15px;
 }
 .gallery img {
     transition: 1s;
-    padding: 20px; 
+    padding: 25px; 
     width: 300px;
 }
 .gallery img:hover {
@@ -20,7 +20,7 @@ h1 , h2  {
     margin: 0px;
     font-size: 35px;
     padding-bottom: 10px;
-    padding-left: 45px;
+    padding-left: 40px;
 }
 h1 {
 font-family: 'Parisienne';
@@ -31,7 +31,7 @@ h2 {
     color: coral;
 }
 .button-container {
-    padding-left: 165px;
+    padding-left: 130px;
 }
 
 
@@ -84,6 +84,6 @@ h2 {
         padding-bottom: 0px;
     }
     .button-container {
-        padding-left: 805px;
+        padding-left: 620px;
     }
 }
