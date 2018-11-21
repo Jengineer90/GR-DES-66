@@ -1,13 +1,11 @@
 .page1 {
     background-color:lightcyan;
-    margin: 0px 0px;
 }
 .page2 {
     background-color:rgb(250, 224, 175);
-    margin: 0px 0px;
 }
 .gallery {
-    margin: 20px 10px;
+    margin: 20px 20px;
 }
 .gallery img {
     transition: 1s;
@@ -22,7 +20,7 @@ h1 , h2  {
     margin: 0px;
     font-size: 35px;
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 45px;
 }
 h1 {
 font-family: 'Parisienne';
@@ -33,13 +31,13 @@ h2 {
     color: coral;
 }
 .button-container {
-    padding-left: 150px;
+    padding-left: 165px;
 }
 
 
 @media (min-width: 769px){
     .gallery {
-        margin: 10px 10px;
+        margin: 10px 15px;
     }
     .gallery img {
         transition: 1s;
@@ -53,12 +51,12 @@ h2 {
     h1, h2 {
         height: 95px;
         font-size: 60px;
-        padding-left: 110px;
+        padding-left: 115px;
         padding-bottom: 0px;
     }
 
     .button-container {
-        padding-left: 328px;
+        padding-left: 333px;
     }
 
 }
@@ -66,22 +64,26 @@ h2 {
     h1, h2 {
         height: 95px;
         font-size: 70px;
-        padding-left: 295px;
+        padding-left: 300px;
         padding-bottom: 0px;
     }
     .button-container {
-        padding-left: 565px;
+        padding-left: 570px;
     }
 
 }
 @media (min-width: 1439px){
+    .page1, .page2 {
+        width: 1665px;
+        height: 855px;
+    }
     h1, h2 {
         height: 95px;
         font-size: 80px;
-        padding-left: 485px;
+        padding-left: 490px;
         padding-bottom: 0px;
     }
     .button-container {
-        padding-left: 800px;
+        padding-left: 805px;
     }
 }
