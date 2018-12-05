@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/stylesheet.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+            <!-- Simulate a smartphone / tablet look -->
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="iconContainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+            </div>            
+            <div class="topnav">
+                <a href="#home" class="active">About</a>
+                <div id="myLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+                    </ul>
+                </div>  
+
+            </div>
+        
+        <!-- End smartphone / tablet look -->
+        </div>
+        <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+        
+                    var y = document.getElementById("myLinks");
+                        if (y.style.display === "block") {
+                        y.style.display = "none";
+                        } else {
+                        y.style.display = "block";
+                            }
+                }
+            </script>
+    </header>
+    <!-- <div class="photo-container">
+            <div class="gallery">
+                <a href="images/snow/snow1.jpg " data-lightbox="mygallery"><img src="images/snow/snow1_small.jpg"></a>
+                <a href="images/snow/snow2.jpg " data-lightbox="mygallery"><img src="images/snow/snow2_small.jpg"></a>
+                <a href="images/snow/snow3.jpg " data-lightbox="mygallery"><img src="images/snow/snow3_small.jpg"></a>
+                <a href="images/snow/snow4.jpg " data-lightbox="mygallery"><img src="images/snow/snow4_small.jpg"></a>
+                <a href="images/snow/snow5.jpg " data-lightbox="mygallery"><img src="images/snow/snow5_small.jpg"></a>
+                <a href="images/snow/snow6.jpg " data-lightbox="mygallery"><img src="images/snow/snow6_small.jpg"></a>
+                <a href="images/snow/snow7.jpg " data-lightbox="mygallery"><img src="images/snow/snow7_small.jpg"></a>
+                <a href="images/snow/snow8.jpg " data-lightbox="mygallery"><img src="images/snow/snow8_small.jpg"></a>
+                <a href="images/snow/snow9.jpg " data-lightbox="mygallery"><img src="images/snow/snow9_small.jpg"></a>
+                <a href="images/snow/snow10.jpg " data-lightbox="mygallery"><img src="images/snow/snow10_small.jpg"></a>
+                <a href="images/snow/snow11.jpg " data-lightbox="mygallery"><img src="images/snow/snow11_small.jpg"></a>
+                <a href="images/snow/snow12.jpg " data-lightbox="mygallery"><img src="images/snow/snow12_small.jpg"></a>
+                <a href="images/snow/snow13.jpg " data-lightbox="mygallery"><img src="images/snow/snow13_small.jpg"></a>
+                <a href="images/snow/snow14.jpg " data-lightbox="mygallery"><img src="images/snow/snow14_small.jpg"></a>
+                <a href="images/snow/snow15.jpg " data-lightbox="mygallery"><img src="images/snow/snow15_small.jpg"></a>
+                <a href="images/snow/snow16.jpg " data-lightbox="mygallery"><img src="images/snow/snow16_small.jpg"></a>
+                <a href="images/snow/snow17.jpg " data-lightbox="mygallery"><img src="images/snow/snow17_small.jpg"></a>
+                <a href="images/snow/snow18.jpg " data-lightbox="mygallery"><img src="images/snow/snow18_small.jpg"></a>
+
+            </div>
+    </div>    -->
+
+</body>
+</html>

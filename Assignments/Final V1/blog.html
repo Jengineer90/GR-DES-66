@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/stylesheet.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <header>
+            <!-- Simulate a smartphone / tablet look -->
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="iconContainer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+            </div>            
+            <div class="topnav">
+                <a href="#home" class="active">Blog</a>
+                <div id="myLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+                    </ul>
+                </div>  
+
+            </div>
+        
+        <!-- End smartphone / tablet look -->
+        </div>
+    
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+
+                var y = document.getElementById("myLinks");
+                    if (y.style.display === "block") {
+                    y.style.display = "none";
+                    } else {
+                    y.style.display = "block";
+                        }
+            }
+        </script>
+
+    </header>
+
+
+
+
+
+</body>
+</html>
