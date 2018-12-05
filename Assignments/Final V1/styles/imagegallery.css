@@ -1,5 +1,5 @@
 .photo-container {
-    margin-left: 0px;
+    padding-left: 0px;
     margin-top: 20px;
     }
 
@@ -34,6 +34,7 @@ h2 {
     .photo-container {
     position: relative;
     margin-left: 100px;
+    padding-left: 20px;
     }
     .gallery {
         margin: 10px 15px;
@@ -52,10 +53,6 @@ h2 {
         font-size: 60px;
         padding-left: 115px;
         padding-bottom: 0px;
-    }
-
-    .button-container {
-        padding-left: 333px;
     }
 
 }

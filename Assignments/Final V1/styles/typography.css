@@ -1,0 +1,45 @@
+/* Header styles */
+h1{
+    color:rgb(138, 22, 216);
+    text-align: center;
+       
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.blogText {
+    padding-top: 20px;
+}
+
+.homeText {
+    padding-top: 20px;
+}
+
+/* Paragraph styles */
+p{
+    color:black;
+    font-style: italic;
+    font-size: 20px;
+    columns: 1;
+    margin: 10px 15px;
+
+}
+
+@media (min-width: 769px){
+    p{
+        columns: 2;
+    }
+
+}
+@media (min-width: 1202px){
+    p{
+        columns: 3;
+    }
+
+}
+@media (min-width: 1439px){
+
+}

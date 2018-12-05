@@ -5,6 +5,10 @@ h1{
        
 }
 
+h3 {
+    text-align: center;
+}
+
 /* Paragraph styles */
 p{
     color:black;
