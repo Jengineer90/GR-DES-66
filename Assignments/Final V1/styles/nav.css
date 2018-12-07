@@ -1,11 +1,11 @@
-
+.header {
+    position: fixed;
+}
 .mobile-container {
 min-width: 280px;
-padding-top: -10px;
 margin: auto;
 height: 60px;
 color: white;
-border-radius: 10px;
 position: fixed;
 }
 
@@ -86,7 +86,7 @@ margin-top: 0px;
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-
+/* 
 @media (min-width: 1439px){
     .topnav {
         width: 1600px;
@@ -103,4 +103,4 @@ margin-top: 0px;
     .bar1, .bar2, .bar3 {
         margin: 6px;
     }
-}
+} */

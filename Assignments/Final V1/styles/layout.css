@@ -1,14 +1,16 @@
 
 .logo {
     padding-top: 60px;
-    padding-left: 85px;
+    /* padding-left: 85px; */
+    width: 100%;
+
 }
 
 .picture__img {
     max-width: 370px;
     padding-top: 20px;
 }
-
+/* 
 @media (min-width: 512px){
     .logo {
         padding-top: 60px;
@@ -31,4 +33,4 @@
 }
 @media (min-width: 1200px){
     
-}
+} */
