@@ -1,0 +1,117 @@
+ /* .donateForm {
+    width: 960px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid darkgray;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    min-width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+
+.form-input {
+    min-width: 100px;
+}
+
+ textarea {
+    display: block;
+    min-height: 200px;
+    margin-left: 100px;
+    min-width: 400px;
+}
+
+.alert {
+    min-height: 338.5px;
+}
+
+.alert-success {
+    border: 1px solid ;
+    background-color: lightgreen; 
+} */
+.donate-container {
+    height: 1000px;
+    background-image: url("http://figureground.org/fg/wp-content/uploads/2016/02/FG-Smokey-eye-tutorial.jpg");
+    opacity: 1.5;
+
+}
+input[type=text], select {
+    width: 90%;
+    height: 40px;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 18px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+label {
+    margin-left: 20px;
+}
+
+.submitForm {
+    width: 50%;
+    background-color: #56aea5;
+    color: black;
+    padding: 14px 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 90px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (min-width: 512px){
+    input[type=text], select {
+        margin-left: 25px;
+    }
+    label {
+        margin-left: 30px;
+    }
+    .submitForm {
+        margin-left: 130px;
+    }
+}
+@media (min-width: 768px){
+    input[type=text], select {
+        margin-left: 35px;
+    }
+    label {
+        margin-left: 40px;
+    }
+    .submitForm {
+        margin-left: 185px;
+    }
+}
+@media (min-width: 960px){
+    input[type=text], select {
+        margin-left: 50px;
+    }
+    label {
+        margin-left: 55px;
+    }
+    .submitForm {
+        margin-left: 230px;
+    }
+}
+@media (min-width: 1200px){
+    input[type=text], select {
+        margin-left: 80px;
+    }
+    label {
+        margin-left: 85px;
+    }
+    .submitForm {
+        margin-left: 410px;
+    }
+}

@@ -1,0 +1,38 @@
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    /* padding-left: 85px; */
+    /*width: 100%; */
+}
+
+.picture__img {
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+@media (min-width: 512px){
+    .picture__img {
+        max-width: 90%;
+        padding-left: 25px;
+    }
+}
+@media (min-width: 768px){
+    .picture__img {
+        max-width: 90%;
+        padding-left: 38px;
+    }
+}
+@media (min-width: 960px){
+    .picture__img {
+        max-width: 90%;
+        padding-left: 47px;
+    }
+}
+@media (min-width: 1200px){
+    .picture__img {
+        max-width: 90%;
+        padding-left: 85px;
+    }
+}

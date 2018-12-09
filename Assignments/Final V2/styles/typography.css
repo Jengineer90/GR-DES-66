@@ -1,0 +1,55 @@
+/* Header styles */
+h1  {
+    color:rgb(138, 22, 216);
+    text-align: center;
+       
+}
+h2 {
+    
+    color:#56aea5;
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+.blogText {
+    padding-top: 20px;
+}
+
+.homeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* Paragraph styles */
+p{
+    color:black;
+    font-style: italic;
+    font-size: 20px;
+    columns: 1;
+    margin: 15px 20px;
+}
+
+@media (min-width: 768px){
+    .homeText {
+        width: 95%;
+    }
+    p{
+        padding-left: 50px;
+        columns: 2;
+    }
+
+}
+@media (min-width: 1200px){
+    p{
+        padding-left: 95px;
+        columns: 2;
+    }
+}
