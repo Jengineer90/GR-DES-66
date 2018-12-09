@@ -1,11 +1,13 @@
 /* Header styles */
 h1  {
-    color:rgb(138, 22, 216);
+    color:black;
     text-align: center;
+    font-size: 35px;
+    padding-top: 15px;
+    margin:0px;
        
 }
-h2 {
-    
+h2 {    
     color:#56aea5;
     text-align: center;
 }
@@ -13,6 +15,22 @@ h2 {
 h3 {
     font-style: italic;
     font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    padding-top: 5px;
+    margin: 0px;
+    font-size: 25px;
+    color:#56aea5;
+    text-align: center
+}
+
+h5 {
+    padding-top: 5px;
+    margin: 0px;
+    font-style: italic;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -25,7 +43,7 @@ h3 {
     flex-direction: column;
     justify-content: center;    
     width: 100%;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 /* Paragraph styles */
@@ -41,15 +59,43 @@ p{
     .homeText {
         width: 95%;
     }
+    h4 {
+        padding-left: 42px;
+    }
+    
+    h5 {
+        padding-left: 37px;
+    }
     p{
         padding-left: 50px;
         columns: 2;
     }
-
+}
+@media (min-width: 960px){
+    h4 {
+        padding-left: 50px;
+    }
+    
+    h5 {
+        padding-left: 48px;
+    }
 }
 @media (min-width: 1200px){
+    h4 {
+        padding-left: 80px;
+    }
+    
+    h5 {
+        padding-left: 75px;
+    }
     p{
         padding-left: 95px;
         columns: 2;
     }
+    h1  {
+    color:black;
+    text-align: center;
+    font-size: 40px;
+    }
 }
+
