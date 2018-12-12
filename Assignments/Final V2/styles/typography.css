@@ -46,9 +46,9 @@ h6 {
     text-decoration: underline;
 }
 
-
 .blog-container {
     padding-top: 20px;
+    columns: 1;
 }
 
 .homeText {
@@ -81,7 +81,7 @@ p{
     }
     p{
         padding-left: 50px;
-        columns: 2;
+        columns: 1;
     }
 }
 @media (min-width: 960px){
@@ -103,12 +103,16 @@ p{
     }
     p{
         padding-left: 95px;
-        columns: 2;
+        columns: 1;
     }
     h1  {
     color:black;
     text-align: center;
     font-size: 40px;
+    }
+    .blog-container {
+        padding-top: 20px;
+        columns: 2;
     }
 }
 
