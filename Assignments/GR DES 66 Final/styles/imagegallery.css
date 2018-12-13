@@ -19,6 +19,15 @@
     filter: grayscale(100%);
     transform: scale(1.1);
 }
+.artist-image {
+    position: relative;
+    opacity: 0.5;
+}
+.artist-name {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 80px;
+}
 @media (min-width: 512px){
     .photo-container {
         display: flex;
@@ -35,6 +44,14 @@
         transition: 1s;
         padding: 15px; 
         width: 150px;
+    }
+    .artist-image {
+        position: relative;
+    }
+    .artist-name {
+        position: relative;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 }
 @media (min-width: 768px){
